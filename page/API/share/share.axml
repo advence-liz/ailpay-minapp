@@ -1,0 +1,32 @@
+<view class="page" onTap="tapPage">
+  <view
+    a:if="{{ !share }}"
+    class="page-description"
+    style="height:500px;background:red;"
+    >点击右上角开始自定义分享{{ name }}
+   
+  </view>
+  <button type="primary" onTap="showShare"> show share</button>
+  <!-- <view style="height:825rpx;background:gray;">
+    <view>ddd</view>
+    <view>ddd</view>
+    <view>ddd</view>
+    <view>ddd</view>
+    <view>dddd</view>
+    <view>ddd</view>
+    <view>ddd</view>
+    <view>ddd</view>
+    <switch checked onChange="switchChange"/>
+    <switch checked onChange="switchChange"/>
+    <switch checked onChange="switchChange"/>
+    <view>ddd</view>
+    <view>dddd</view>
+    <view>ddd</view>
+    <view>ddd</view>
+    <view>ddd</view>
+    <view>ddd</view>
+    <view>dddd</view>
+    <button type="default" open-type="share" hover-class="red">share</button>
+  </view> -->
+  
+</view>
