@@ -1,5 +1,5 @@
 Page({
-  data: { name: 'liz', share: false },
+  data: { share: false },
   tapPage() {
     console.log('tap page')
     // this.setData({share:false})
@@ -18,7 +18,8 @@ Page({
       title: '分享 View 组件1',
       desc: 'View 组件很通用',
       path: 'page/component/view/view',
-      // bgImgUrl:'http://img003.qufenqi.com/products/b1/fa/b1fab3b30e56780334d6ac3a2844598c.png'
+      content:'吱口令',
+      bgImgUrl:'http://img003.qufenqi.com/products/0d/8b/0d8b66116258021d8b2aac7355810a97.jpeg',
       success: () => {
         console.log('succeed')
 

@@ -9,14 +9,43 @@ Page({
       g: Math.round(Math.random() * 255 | 0),
       b: Math.round(Math.random() * 255 | 0),
     };
-
+    // this.img=``
     this.interval = setInterval(this.draw.bind(this), 17);
     this.ctx = my.createCanvasContext('canvas');
-  },
+    this.ctxbg = my.createCanvasContext('bg');
 
+    this.drawBg()
+
+  },
+  drawBg() {
+    const { ctxbg: ctx } = this
+    console.log('ctxbg', ctx)
+    my.getImageInfo({
+      src: 'https://img3.doubanio.com/view/photo/l/public/p2327709524.jpg',
+      success: (res) => {
+        console.log(res)
+        ctx.drawImage(res.path, 0, 0, 610, 610)
+        ctx.draw()
+      },
+      fail() {
+        debugger
+      }
+    })
+
+    // my.chooseImage({
+    //   success: function (res) {
+
+    //     ctx.drawImage(res.apFilePaths[0], 0, 0, 610, 610)
+    //     ctx.draw()
+    //   }
+    // })
+  }
+  ,
   draw() {
+
     const { ctx } = this;
-    ctx.setFillStyle('#FFF');
+  /* background: transparent; */
+    ctx.setFillStyle('transparent');
     ctx.fillRect(0, 0, 610, 610);
 
     ctx.beginPath();
