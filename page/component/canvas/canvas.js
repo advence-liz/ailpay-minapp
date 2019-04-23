@@ -1,3 +1,6 @@
+
+
+
 Page({
   onReady() {
     this.point = {
@@ -20,18 +23,20 @@ Page({
   drawBg() {
     const { ctxbg: ctx } = this
     console.log('ctxbg', ctx)
-    my.getImageInfo({
-      src: 'https://img3.doubanio.com/view/photo/l/public/p2327709524.jpg',
-      success: (res) => {
-        console.log(res)
-        ctx.drawImage(res.path, 0, 0, 610, 610)
-        ctx.draw()
-      },
-      fail() {
-        debugger
-      }
-    })
+    // my.getImageInfo({
+    //   src: 'https://img3.doubanio.com/view/photo/l/public/p2327709524.jpg',
+    //   success: (res) => {
+    //     console.log(res)
+    //     ctx.drawImage(res.path, 0, 0, 610, 610)
+    //     ctx.draw()
+    //   },
+    //   fail() {
+    //     debugger
+    //   }
+    // })
 
+    ctx.drawImage('/image/ant.png', 0, 0, 610, 610)
+    ctx.draw()
     // my.chooseImage({
     //   success: function (res) {
 
@@ -44,7 +49,7 @@ Page({
   draw() {
 
     const { ctx } = this;
-  /* background: transparent; */
+    /* background: transparent; */
     ctx.setFillStyle('transparent');
     ctx.fillRect(0, 0, 610, 610);
 

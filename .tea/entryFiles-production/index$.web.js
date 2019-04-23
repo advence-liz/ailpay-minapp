@@ -32,6 +32,7 @@ require('../../node_modules/mini-antui/es/input-item/index');
 require('../../node_modules/mini-antui/es/picker-item/index');
 require('../../node_modules/mini-antui/es/am-checkbox/index');
 require('../../page/component/index');
+require('../../page/matter/matter');
 require('../../page/component/button/button');
 require('../../page/component/canvas/canvas');
 require('../../page/component/checkbox/checkbox');

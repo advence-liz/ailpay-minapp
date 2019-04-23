@@ -1,6 +1,7 @@
 {
   "pages": [
     "page/component/index",
+    "page/matter/matter",
     "page/component/button/button",
     "page/component/canvas/canvas",
     "page/component/checkbox/checkbox",
